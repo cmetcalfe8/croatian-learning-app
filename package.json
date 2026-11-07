@@ -1,0 +1,9 @@
+{
+  "name": "croatian-learning-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local Croatian learning app",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

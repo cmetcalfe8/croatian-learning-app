@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7fbff">
+  <title>Bok! — Croatian learning</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="shell" id="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#learn"><span class="brand-icon">B</span><span>bok<span>!</span></span></a>
+      <div class="sidebar-label">YOUR CROATIAN JOURNEY</div>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="learn"><span class="nav-symbol">⌁</span><span>Learn</span></button>
+        <button class="nav-item" data-view="practice"><span class="nav-symbol">⟳</span><span>Practice</span></button>
+        <button class="nav-item" data-view="achievements"><span class="nav-symbol">✦</span><span>Achievements</span><span class="nav-pill" id="badge-count">0</span></button>
+        <button class="nav-item" data-view="league"><span class="nav-symbol">♜</span><span>Weekly league</span></button>
+      </nav>
+      <div class="side-note"><span class="side-note-mark">✿</span><b>Polako, polako.</b><p>Slowly, slowly. Every little bit counts.</p></div>
+      <button class="profile" data-view="profile"><span class="avatar">M</span><span><b>My learner profile</b><small id="profile-level">Beginner · A1</small></span><span class="more">•••</span></button>
+    </aside>
+
+    <main class="main" id="main">
+      <header class="topbar"><div class="mobile-brand"><span class="brand-icon">B</span> bok<span>!</span></div><div class="crumb" id="crumb">My path <span>›</span> <b>Learn Croatian</b></div><div class="top-stats"><div class="top-stat streak"><span>🔥</span><b id="streak">0</b><small>day streak</small></div><div class="top-stat heart"><span>♥</span><b id="hearts">5</b></div><div class="top-stat gem"><span>✦</span><b id="gems">0</b></div><button class="top-avatar" data-view="profile">M</button></div></header>
+      <div id="view-root"></div>
+    </main>
+  </div>
+  <div id="lesson-root"></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
